@@ -1,0 +1,30 @@
+<div class="container">
+   <form (ngSubmit)="sendEmail()">
+   
+    <h1>COMPOSE  EMAIL </h1>
+    <mat-form-field class="field" appearance="outline">
+        <mat-label>TO</mat-label>
+        <input matInput name="to" [(ngModel)]="emailMessageReq.to">
+    </mat-form-field>
+
+
+
+
+    <mat-form-field class="field" appearance="outline">
+        <mat-label>SUBJECT </mat-label>
+        <input matInput name="subject" [(ngModel)]="emailMessageReq.subject">
+    </mat-form-field>
+
+
+    <mat-form-field class="field" appearance="outline">
+        <mat-label>Message Body </mat-label>
+        <textarea  name="message" [(ngModel)]="emailMessageReq.message" matInput placeholder="write your message here .." cols="50" rows="15"></textarea>
+    </mat-form-field>
+   
+    <div id="btncontainer" class="div container text-center">
+        <button id="btnSendEmail"  mat-raised-button color="primary">SEND</button>
+        <button type="reset" mat-raised-button color="accent">RESET</button>
+    </div>
+</form>
+
+</div>

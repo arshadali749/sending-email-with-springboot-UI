@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+   background-color: rgb(175, 164, 160);
+    border: solid rgb(211, 203, 203) 10px ;
+    border-radius: 10px;
+    padding: 5%
+   
+}
+.field{
+    width: 100%;
+
+}
+#btnSendEmail{
+    margin-right: 20px;
+}
+#btncontainer{
+width: 80%;
+}
